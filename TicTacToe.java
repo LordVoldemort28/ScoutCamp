@@ -6,6 +6,11 @@ Class: TicTacToe.java
 
 import java.util.*;
 
+/*
+		@author - Rahul Prajapati 
+		Date Modified - 04/02/2019
+ */
+
 public class TicTacToe{
 
 
@@ -13,7 +18,7 @@ public class TicTacToe{
 	final static private String CROSS = "X";
 	final static private String ZERO = "O";
 
-	/***/
+	/*Main method*/
 	public static void main(String args[]){
 
 		//Print welcome message
@@ -27,6 +32,12 @@ public class TicTacToe{
 
 	}//End main method
 
+	/*
+	* Get a vaild input from user to place move in the board
+	* @args board - current state of the board and 
+	*		player - player which playing current move
+	* @returns {@code true}if move is sucessfully played
+	*/
 	public static boolean playerMove(Board board, String player) {
 		int position = -1;
 		boolean flag = false;
@@ -51,7 +62,11 @@ public class TicTacToe{
 				return false;
 		}
 	
-
+		/*
+		*	Start game by intializing the board and check for winning in each move and give attempt
+		*   to player to place their move
+		* 	@return null
+		*/
 		public static String playGame(int gameOption) {
 
 			String player1 = CROSS;
@@ -88,6 +103,7 @@ public class TicTacToe{
 			return null;
 		}
 
+		/* Print lets being message and let know player their move sign */
 		public static void letsBeginMessage(int gameChoice){
 
 			System.out.println("\n" + 
@@ -110,7 +126,7 @@ public class TicTacToe{
 
 		}//End letsBeingMessage()
 
-		/***/
+		/* Print welcome message and game option */
 		public static void printWelcomeMessage() {
 			System.out.println("\n" + 
 					" █     █░▓█████  ██▓     ▄████▄   ▒█████   ███▄ ▄███▓▓█████ \n" + 

@@ -1,6 +1,11 @@
 import java.util.Arrays;
 import java.util.Random;
 
+/*
+		@author - Rahul Prajapati 
+		Date Modified - 04/02/2019
+ */
+
 public class Board{
 
     private String board[];
@@ -50,7 +55,7 @@ public class Board{
 
     /*
      *For each state of the board check if someone is winning or draw and end game 
-     *
+     *Link used for this method - https://gist.github.com/xaviablaza-zz/3844825
      *@return {@code X} if X wins {@code O} if O wins {@code Draw} if match is draw
      */
     public String checkWinning(){
