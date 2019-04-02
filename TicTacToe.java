@@ -5,12 +5,6 @@ Class: TicTacToe.java
  */
 
 import java.util.*;
-
-/*
-		@author - Rahul Prajapati 
-		Date Modified - 04/02/2019
- */
-
 public class TicTacToe{
 
 
