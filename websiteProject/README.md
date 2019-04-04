@@ -41,7 +41,8 @@ We will learn how to change colors of our website.
 13.	You can do much more with style, but let’s wait until we get through all the other tasks!
 14.	Go back to myWebsite.html where you left off.
  
-<br />__CAREER PATHS__
+<br /><br />
+__CAREER PATHS__
 
 Web Developer
 ------------------
