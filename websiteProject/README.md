@@ -89,36 +89,36 @@ Game Developer
 
 __Education__
 
-●	Undergraduate Certificate (Big Test)
-●	Associate’s Degree (Two Years of College)
-●	Bachelor's Degree (Four Years of College)
-●	Master’s Degree (More Than Four Years of College)
+*	Undergraduate Certificate (Big Test)
+*	Associate’s Degree (Two Years of College)
+*	Bachelor's Degree (Four Years of College)
+*	Master’s Degree (More Than Four Years of College)
 
 __Technical Skills__
 
-●	Java
-●	C
-●	C++
-●	2D software programming
-●	3D software programming
-●	Art Classes
-●	Creative Writing Classes
-●	Sculpting Classes
-●	Computer Science Classes
-●	Marketing Training 
+*	Java
+*	C
+*	C++
+*	2D software programming
+*	3D software programming
+*	Art Classes
+*	Creative Writing Classes
+*	Sculpting Classes
+*	Computer Science Classes
+*	Marketing Training 
 
 __Work Experience__
 
-●	Making your own games
-●	Make your portfolio
-●	Interned for Nintendo
-●	Game Designer for Electronic Arts (EA)
-●	Software Developer for Activision | Blizzard
-●	Computer Programmer for Ubisoft
-●	Animator for Rockstar
-●	Artist for Capcom
-●	Audio Engineer for Naughty Dog
-●	Writer for Bungie
+*	Making your own games
+*	Make your portfolio
+*	Interned for Nintendo
+*	Game Designer for Electronic Arts (EA)
+*	Software Developer for Activision | Blizzard
+*	Computer Programmer for Ubisoft
+*	Animator for Rockstar
+*	Artist for Capcom
+*	Audio Engineer for Naughty Dog
+*	Writer for Bungie
 
  
 Cyber Security
@@ -126,35 +126,35 @@ Cyber Security
 
 __Education__
 
-●	Associate’s Degree (Two Years of College)
-●	Bachelor's Degree (Four Years of College)
-●	Master’s Degree (More Than Four Years of College)
+*	Associate’s Degree (Two Years of College)
+*	Bachelor's Degree (Four Years of College)
+*	Master’s Degree (More Than Four Years of College)
 
 __Technical Skills__
 
-●	Intrusion detection for Facebook
-●	Malware analysis and reversing
-●	Programming know-how
-●	Thinking like a black hat (Thinking like a evil hacker)
-●	Building a well-rounded skill set
-●	Risk analysis and mitigation
-●	Cloud security
-●	Security analysis
-●	Threat assessment
-●	Communication
-●	Intelligence gathering
-●	Identity and access management
-●	Software development lifecycle management
+*	Intrusion detection for Facebook
+*	Malware analysis and reversing
+*	Programming know-how
+*	Thinking like a black hat (Thinking like a evil hacker)
+*	Building a well-rounded skill set
+*	Risk analysis and mitigation
+*	Cloud security
+*	Security analysis
+*	Threat assessment
+*	Communication
+*	Intelligence gathering
+*	Identity and access management
+*	Software development lifecycle management
 
 __Work Experience__
 
-●	Chief Information Security Officer
-●	Forensic Computer Analyst
-●	Penetration Tester
-●	Security Architect
-●	IT Security Engineer
-●	Security Systems Administrator
-●	IT Security Consultant
+*	Chief Information Security Officer
+*	Forensic Computer Analyst
+*	Penetration Tester
+*	Security Architect
+*	IT Security Engineer
+*	Security Systems Administrator
+*	IT Security Consultant
 
  
 Computer Scientist
@@ -162,34 +162,34 @@ Computer Scientist
 
 __Education__
 
-●	None (Own Experience)
-●	Undergraduate Certificate (Big Test)
-●	Associate’s Degree (Two Years of College)
-●	Bachelor's Degree (Four Years of College)
-●	Master’s Degree (More Than Four Years of College)
+*	None (Own Experience)
+*	Undergraduate Certificate (Big Test)
+*	Associate’s Degree (Two Years of College)
+*	Bachelor's Degree (Four Years of College)
+*	Master’s Degree (More Than Four Years of College)
 
 __Technical Skills__
 
-●	Analytical Skills
-●	Problem-Solving
-●	Creativity
-●	Java
-●	C
-●	C++
-●	Critical-Thinking
-●	Resilience
-●	HTML
-●	CSS
+*	Analytical Skills
+*	Problem-Solving
+*	Creativity
+*	Java
+*	C
+*	C++
+*	Critical-Thinking
+*	Resilience
+*	HTML
+*	CSS
 
 __Work Experience__
-●	Software Developer
-●	Database Administrator
-●	Computer Hardware Engineer
-●	Computer Systems Analyst
-●	Computer Network Architect
-●	Web Developer
-●	Information Security Analyst
-●	Computer and Information Research Scientist
-●	Computer and Information Systems Manager 
-●	IT Project Manager
+*	Software Developer
+*	Database Administrator
+*	Computer Hardware Engineer
+*	Computer Systems Analyst
+*	Computer Network Architect
+*	Web Developer
+*	Information Security Analyst
+*	Computer and Information Research Scientist
+*	Computer and Information Systems Manager 
+*	IT Project Manager
 
