@@ -1,55 +1,68 @@
 from twitterApi import TwitterAPI, GamingPlatform
-from typing import List
 
 class Tweet(object):
-        def __init__(self):
-            self.firstLIne = ""
-            self.LastLIne = 0
-            self.something = 0
+    def __init__(self):
+        self.firstLIne = ""
+        self.LastLIne = 0
+        self.something = 0
 
 class Advertisment(object):
 
     def __init__(self,api):
         self.api = TwitterAPI()
 
-    def GetTopPlatforms(self,listOfPlatforms : List[GamingPlatform]):
-        # get the positive/neg/ and neutral for each tweet
-        # order them by highest -> lowest positive
-        # have them sort this out into two functions?
-        topPlatforms = []
-        for platform in listOfPlatforms:
-            platform_with_data = self.api.get_public_views_on_platform(platform)
-            topPlatforms.append(platform)
-        return topPlatforms
+
+    # Given a list of Platform Objects, 
+    # Populate their negativeView and positiveView properties,
+    # then return the list of Platform Objects.
+    def get_platform_views(self,listOfPlatforms):
+        
+        # todo: get view data for each platform
+        for platform in listOfPlatforms:          
+            platform.positiveView = self.api.get_positive_views(platform.name)
+            platform.negativeView = self.api.get_negative_views(platform.name)   
+            
+            
+        return listOfPlatforms
+ 
+ 
+   
+    # Given a list of Platform Objects
+    # Return Platform Object with the GREATEST Positive View Value
+    def get_top_platform(self,platformsWithData):
+        result = GamingPlatform("place holder")
+                
+        # todo: get top platform, then return    
+        for platform in platformsWithData:
+            if(platform.positiveView > result.positiveView):
+                    result = platform
+        
+        
+        return result
+
+
+    # --BONUS--
+    # Given a list of Platform Objects
+    # Sort the Platform Objects based on their Positive View Value
+    # return this newly sorted list
+    def sort_platforms(self, listOfPlatforms):
+        result = []
+        
+        # todo: sort platforms
+        while(len(listOfPlatforms) > 0):
+            top = self.get_top_platform(listOfPlatforms)
+            result.append(top)
+            listOfPlatforms.remove(top)
+        
+        
+        return result
+
+    # Given a string to tweet
+    # Post a tweet using the string as content
+    # return nothing 
     
-    def SendTweet(self,tweet: Tweet):
-        print("Entered sendTweet") 
-        # need to have the students put their 'signature' at the end
-
-#I'm going to need to do checks so that they do not overload twitter and get us blocked    
-
-adv = Advertisment( TwitterAPI() )
-listOfPlatforms = [
-                    GamingPlatform("xbox"),
-                    GamingPlatform("playstation"),
-                    GamingPlatform("nintendo switch"),
-                    GamingPlatform("PC"), # gaming computer
-                    GamingPlatform("iPhone"),
-                    GamingPlatform("android")
-                    ]
-topPlatforms = adv.GetTopPlatforms(listOfPlatforms)
-print(topPlatforms[0].positiveView)
-
-# Lesson goals:
-#       - understand the what an object is, and how to use it
-#       - undestand functions
-#       - understand how to devise their own sorting algorithm
-#       - understand what APIs are, and how they can be used
-# objects, functions, lists, loops
-
-
-
-# next, go through your list, get all values
-# check all the values, get top 3 result
-# tweet at the end with your name maybe?
-# we can also follow people, or unfollow people.
+    #todo: create function
+    def tweet_message(self, message):
+        self.api.update_status("This is our very first tweet!")
+        
+    # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
