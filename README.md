@@ -6,14 +6,14 @@ Java Project
 
 To compile and run 
 
-"""shell
+```shell
 $ javac TicTacToe.java 
 $ java TicTacToe
-"""
+```
 
 Website Project
 -----------------
-To run
+Read README.md inside folder
 
 Python Project
 -----------------
