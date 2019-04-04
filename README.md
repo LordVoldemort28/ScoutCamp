@@ -17,6 +17,7 @@ Read README.md inside folder
 
 Python Project
 -----------------
-from command prompt
-
-py main.py
+Open command prompt
+```shell
+$ python main.py
+```
