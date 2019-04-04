@@ -4,7 +4,7 @@ Scout Camp Projects
 Java Project
 --------------
 
-To comile and run 
+To compile and run 
 
 """shell
 $ javac TicTacToe.java 
@@ -17,4 +17,6 @@ To run
 
 Python Project
 -----------------
-To run
+from command prompt
+
+py main.py
