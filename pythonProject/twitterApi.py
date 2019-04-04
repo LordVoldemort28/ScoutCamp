@@ -9,12 +9,32 @@ class GamingPlatform(object):
         self.positiveView = 0
         self.negativeView = 0
 
-# https://www.geeksforgeeks.org/twitter-sentiment-analysis-using-python/
+
 class TwitterAPI(object): 
+    
+# DO NOT EDIT CODE ABOVE THIS LINE ==========================================
+
+
+    #   ------------- PROBLEM 1 -------------  
+    # Given a sentiment number 
+    # if the number is greater than zero, return positive
+    # if the number is equal to zero, return neutral
+    # if the number is less than, return negative
+    def get_tweet_sentiment(self, sentiment): 
+        
+        # todo: return correct sentiment
+        
+        return 'something fancy'
+
+
+    
+    
+# DO NOT EDIT CODE BELOW THIS LINE ===========================================
 
     def __init__(self): 
         self.authenticate()
 
+# DO NOT EDIT THIS CODE
     def authenticate(self):
         # keys and tokens from the Twitter Dev Console 
         consumer_key = 'ZHvgTVAgG5G2bXCHSe1MIZlH7'
@@ -22,7 +42,7 @@ class TwitterAPI(object):
         access_token = '956979360308891649-srXjqsUqiSdlXiLCjWnLDzimKutSFK3'
         access_token_secret = 'VYIdOzrllvqJvkOZhnXchO0tjzjniExw3NMmN42TIe7uS'
 
-        # attempt authentication 
+
         try: 
             self.auth = OAuthHandler(consumer_key, consumer_secret) 
 
@@ -34,19 +54,12 @@ class TwitterAPI(object):
         except: 
             print("Error: Authentication Failed") 
             return False
-
+        
+# DO NOT EDIT THIS CODE
     def clean_tweet(self, tweet): 
         return ' '.join(re.sub("(@[A-Za-z0-9]+)|([^0-9A-Za-z \t]\w+:\/\/\S+)", " ", tweet).split()) 
 
-    def get_tweet_sentiment(self, tweet): 
-        analysis = TextBlob(self.clean_tweet(tweet)) 
-        if analysis.sentiment.polarity > 0: 
-            return 'positive'
-        elif analysis.sentiment.polarity == 0: 
-            return 'neutral'
-        else: 
-            return 'negative'
-
+# DO NOT EDIT THIS CODE
     def get_tweets(self, query, count = 10):
         tweets = [] 
 
@@ -57,7 +70,7 @@ class TwitterAPI(object):
                 parsed_tweet = {} 
 
                 parsed_tweet['text'] = tweet.text 
-                parsed_tweet['sentiment'] = self.get_tweet_sentiment(tweet.text) 
+                parsed_tweet['sentiment'] = self.get_tweet_sentiment(TextBlob(self.clean_tweet(tweet.text)).sentiment.polarity ) 
 
                 if tweet.retweet_count > 0: 
                     if parsed_tweet not in tweets: 
@@ -70,7 +83,7 @@ class TwitterAPI(object):
         except tweepy.TweepError as e: 
             print("Error : " + str(e)) 
             
-            
+# DO NOT EDIT THIS CODE            
     def get_public_views_on_platform(self,query):
         result = GamingPlatform(query)
         negative_tweets_percentage = 0
@@ -92,15 +105,17 @@ class TwitterAPI(object):
         result.negativeView = negative_tweets_percentage
         return result
 
+# DO NOT EDIT THIS CODE
     def get_positive_views(self, name):
         return self.get_public_views_on_platform(name).positiveView
 
+# DO NOT EDIT THIS CODE
     def get_negative_views(self, name):
         return self.get_public_views_on_platform(name).negativeView
-    
+  
+    # DO NOT EDIT THIS CODE
     def update_status(self,message):
         self.api.update_status(message);
-        #return [positive_tweets_percentage, negative_tweets_percentage] #return an array, or the actual platform
         #need emergency function
         
         
