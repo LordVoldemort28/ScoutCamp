@@ -17,9 +17,9 @@ class TwitterAPI(object):
 
     #   ------------- PROBLEM 1 -------------  
     # Given a sentiment number 
-    # if the number is greater than zero, return positive
-    # if the number is equal to zero, return neutral
-    # if the number is less than, return negative
+    # if the number is greater than zero, return 'positive'
+    # if the number is equal to zero, return 'neutral'
+    # if the number is less than zero, return 'negative'
     def get_tweet_sentiment(self, sentiment): 
         
         # todo: return correct sentiment
